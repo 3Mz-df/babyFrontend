@@ -1,0 +1,127 @@
+<!-- 帮我补充代码 把整体内容版面居中显示
+14:58
+
+我来帮你添加代码，让整体内容版面居中显示。需要添加一个容器div并设置居中样式：
+
+
+HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{新思想引领新征程} 推进长江十年禁渔 谱写长江大保护新篇章</title>
+    
+                    <!-- 三个选择器 -->
+
+<!--1 Span：元素选择器 -->
+
+
+<!--2 .class:类选择器 -->
+.cls{
+    color: gray;
+ }
+ <span class="cls">666666</span>
+ <span class="cls">008988</span>
+<!-- 写在head的style里 -->
+
+
+<!--3 #id选择器 -->
+#time {
+    color:#0000ff;
+}
+<span class="cls" id="time">666666</span>
+<!-- 写在head的style里 -->
+
+
+
+                    <!-- html引入css  -->
+    <!-- 方式2，内部样式 -->
+<style>
+        span{
+            color:#817e7e;
+        }
+        a {
+        text-decoration: none;
+    }
+    /* 去除下划线 用ai即可 */
+
+    p{
+        /* 设置行高 */
+        line-height: 2;
+        /* 设置首行缩进 */
+        text-indent: 2em;
+    }
+
+    /* 添加容器居中样式 */
+    .container {
+        width: 80%; /* 设置内容宽度占页面80% */
+        max-width: 1200px; /* 最大宽度限制 */
+        margin: 0 auto; /* 左右自动外边距实现居中 */
+        padding: 20px; /* 内边距 */
+    }
+
+ </style>
+    <!-- 方式3，外部样式 复用性最强 引入新文件news.css的东西 stylesheet代表引入css href代表选择css代码-->
+    <!-- <link rel="stylesheet" href="css/news.css">-->
+</head>
+
+
+
+
+<body>
+    <div class="container">  <!-- 添加容器 -->
+                                            <!-- 新闻标题 -->
+    <!-- 定义一个标题，标题内容： {新思想引领新征程} 推进长江十年禁渔 谱写长江大保护新篇章 -->
+     <h1>{新思想引领新征程} 推进长江十年禁渔 谱写长江大保护新篇章</h1>
+
+    <!-- 定义一个超链接，里面展示 央视网 -->
+    <a href="http://www.cctv.com"  target="_blank" style="margin-right: 20px;">央视网</a>
+
+    <!--方式1,行内样式 仅对当前指定的标签内容生效-->
+    <!-- <span style="color: black;">2024年05月15日  20:07</span> -->
+    <span>2024年05月15日  20:07</span>
+
+<br><br>
+                                            <!-- 新闻正文 -->
+     <!-- 定义一个视频，引入video下的.mp4 -->
+        <!-- video视频标签属性{
+         src：地址，
+         controls：控制（播放控件）
+         autoplay：自动播放
+         width：宽度（宽高设置一个即可 另一个会等比例缩放）
+         height：高度
+         loop：循环播放
+         muted：静音播放
+        }
+        -->
+      <video src="video/1.mp4" controls width="100%"></video>
+      <!-- <audio src="audio/1.mp3" controls>音频播放-->
+    <p>
+        <b>正文阿斯顿法国红酒</b>看来阿斯顿法国红酒看来阿斯阿斯顿法国红酒看来
+        的风格和健康法国海军阿斯顿法国红酒看来看来阿斯顿法国红酒看来阿
+        酒看似和促进和客户跟进和的风格和健康法国海军阿斯顿法国红酒看来
+        看来阿斯顿法国红酒看来阿斯阿斯顿法国红酒看来
+        的风格和健康法国海军阿斯顿法国红酒看来看来阿斯顿法国红酒看来阿
+        酒看似和促进和客户跟进和的风格和健康法国海军阿斯顿法国红酒看来
+    </p>
+       <p> asdfghjkl 阿斯顿法国红酒看来</p>  
+       （P段落标签 b，strong加粗）
+
+     
+<br>
+       <!-- 定义一张图片，引入img下的.png -->
+         <!-- img图片标签属性{
+          src：地址，
+          alt：替代文本
+          width：宽度
+          height：高度
+       }
+       -->
+       <img src="img/屏幕截图(40).png" alt="图片" width="100%">
+
+       <p>正文阿斯顿法国红酒看来阿斯顿法国红酒看来阿斯顿法国红酒看</p>
+    </div>  <!-- 关闭容器 -->
+</body>
+
+</html>
